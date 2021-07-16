@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function GetGreeting(user) {
+  if(user) {
+    return <div>
+        <h1>Hello, {formatName(user)}</h1>
+        <p>Good to see you!</p>
+      </div>;
+  }
+  return <div>
+  <h1>Hello, Stranger!</h1>
+  <p>Good to see you!</p>
+</div>;
+}
+
+function formatName(user) {
+  return user.firstname + ' ' + user.lastname;
+}
+
+const user = {
+  firstname: 'Mike2',
+  lastname: 'Upjohn2'
+};
+
+const element = GetGreeting(user);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  element,
   document.getElementById('root')
 );
 
