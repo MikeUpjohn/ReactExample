@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Open24";
+    src: url('../../fonts/open-24.ttf');
+}
+
+.time {
+    margin:auto;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-top:10px;
+    font-family: "Open24", monospace;
+    color:white;
+    font-size:300px;
+}
+
+.time p {
+    margin-top:0px;
+}
+
+.smallDay {
+    font-family: "Courier", sans-serif;
+    font-size:36px;
+    font-weight:bold;
+}
