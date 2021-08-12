@@ -3,7 +3,7 @@
     src: url('../../fonts/open-24.ttf');
 }
 
-.time {
+/* .time {
     margin:auto;
     position: absolute;
     top:0;
@@ -11,17 +11,30 @@
     right:0;
     bottom:0;
     padding-top:10px;
+} */
+
+.time p {
+    margin-top: 0px;
     font-family: "Open24", monospace;
-    color:white;
+    color:#abff57;
     font-size:300px;
 }
 
-.time p {
-    margin-top:0px;
-}
-
-.smallDay {
+.time .smallDay {
     font-family: "Courier", sans-serif;
+    color: #FFFFFF;
     font-size:36px;
     font-weight:bold;
+}
+
+@media screen and (max-width: 1068px) {
+    .time p {
+        font-size:100px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+    .time p {
+        font-size:200px;
+    }
 }

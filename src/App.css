@@ -3,8 +3,6 @@
 }
 
 .clock {
-  background-color:#282c34;
-  min-height:100vh;
   align-items: center;
   justify-content: center;
 }
